@@ -1,0 +1,109 @@
+@import './App.scss';
+
+$footer-bg-color: #8c05b6;
+$footer-bg-color-2: #dd1c9d; 
+
+#bannerservices {
+  @include static-layout-header();
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: $color-sec;
+
+  .bannerservices__container {
+    width: 100%;
+    height: 100%;
+    background-image: url("/images/Bisnis-Salon-Kecantikan.jpg");
+    background-size: cover;
+    position: relative;
+
+    .bannerservices__content {
+      position: relative;
+      text-align: center;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      h1 {
+        text-align: center;
+        padding-top: 9%;
+        font-size: 60px;
+        font-family: $font__family;
+      }
+
+      h4 {
+        text-align: center;
+        font-size: 15px;
+        padding-top: 1%;
+        width: 50%;
+        font-family: $font__family;
+      }
+    }
+  }
+}
+
+#catalog {
+  width: 100%;
+  height: 160vh;
+  padding: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .catalog__container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 3%;
+    gap: 20px;
+
+    .catalog__container__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      border-radius: 8px;
+      overflow: hidden;
+      width: 100%;
+      max-width: 600px;
+      img {
+        width: 500px;
+        min-height: 500px;
+        object-fit: cover;
+        box-shadow: 0px 4px 20px rgba(179, 36, 235, 0.24); /* Contoh box-shadow solid */
+      }
+
+      .desc__catalog {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+
+        h2 {
+          font-size: 24px;
+          color: #333;
+          padding-top: 8px;
+          font-family: $font__family;
+        }
+
+        p {
+          margin: 8px 0;
+          font-size: 16px;
+          color: #666;
+          opacity: 90%;
+        }
+
+        h4 {
+          margin-top: 5px;
+          font-size: 18px;
+          color: #007bff;
+          cursor: pointer;
+          transition: color 0.3s;
+          font-family: $font__family;
+
+          &:hover {
+            color: #0056b3;
+          }
+        }
+      }
+    }
+  }
+}

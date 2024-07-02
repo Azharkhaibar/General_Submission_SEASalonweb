@@ -1,0 +1,210 @@
+@import './App.scss';
+
+@mixin font__primary {
+  font-family: $font__primary__new;
+  font-style: italic;
+}
+
+#banner__reservation {
+  width: 100%;
+  height: 65vh;
+  background-image: url('/image/salonabout.jpg'); // Make sure the image path is correct
+  background-size: cover;
+  background-position: center;
+
+  .banner__reservation__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    .banner__reservation__text {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+
+      a, h4 {
+        font-family: $font__family;
+        font-size: 20px;
+        padding-top: 5%;
+        text-decoration: none;
+        color: #333; 
+        transition: color 0.3s ease; 
+
+        &:hover {
+          color: rgb(255, 121, 204); 
+        }
+      }
+    }
+
+    h2 {
+      font-size: 75px;
+      @include font__primary;
+      padding-top: 2%;
+      color: rgb(255, 251, 254);
+    }
+  }
+}
+
+
+#banner__coloring {
+  width: 100%;
+  height:65vh;
+  background-image: url('/images/coloring.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .banner__coloring__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    .banner__coloring__text {
+      display: flex;
+      align-items: center; // Menyusun elemen ke tengah secara vertikal
+      gap: 20px;
+
+      a, h4 {
+        font-family: $font__family;
+        font-size: 20px;
+        padding-top: 5%;
+        text-decoration: none;
+        color: #333; // Warna teks default
+        transition: color 0.3s ease; // Animasi perubahan warna
+
+        &:hover {
+          color: rgb(255, 121, 204); // Warna teks saat dihover
+        }
+      }
+    }
+
+    h2 {
+      font-size: 75px;
+      @include font__primary;
+      padding-top: 2%;
+      color: rgb(255, 251, 254);
+    }
+  }
+}
+
+#banner__haircut {
+  width: 100%;
+  height:65vh;
+  background-image: url('/image/haircuts.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .banner__haircut__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    .banner__haircut__text {
+      display: flex;
+      align-items: center; // Menyusun elemen ke tengah secara vertikal
+      gap: 20px;
+
+      a, h4 {
+        font-family: $font__family;
+        font-size: 20px;
+        padding-top: 5%;
+        text-decoration: none;
+        color: #333; // Warna teks default
+        transition: color 0.3s ease; // Animasi perubahan warna
+
+        &:hover {
+          color: rgb(255, 121, 204); // Warna teks saat dihover
+        }
+      }
+    }
+
+    h2 {
+      font-size: 75px;
+      @include font__primary;
+      padding-top: 2%;
+      color: rgb(255, 251, 254);
+    }
+  }
+}
+
+#banner__facial {
+  width: 100%;
+  height:65vh;
+  background-image: url('/images/coloring.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .banner__facial__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    .banner__facial__text {
+      display: flex;
+      align-items: center; // Menyusun elemen ke tengah secara vertikal
+      gap: 20px;
+
+      a, h4 {
+        font-family: $font__family;
+        font-size: 20px;
+        padding-top: 5%;
+        text-decoration: none;
+        color: #333; // Warna teks default
+        transition: color 0.3s ease; // Animasi perubahan warna
+
+        &:hover {
+          color: rgb(255, 121, 204); // Warna teks saat dihover
+        }
+      }
+    }
+
+    h2 {
+      font-size: 75px;
+      @include font__primary;
+      padding-top: 2%;
+      color: rgb(255, 251, 254);
+    }
+  }
+}
+
+#banner__predicure {
+  width: 100%;
+  height:65vh;
+  background-image: url('/images/coloring.jpg');
+  background-size: cover;
+  background-position: center;
+
+  .banner__predicure__container {
+    display: flex;
+    flex-direction: column;
+    padding: 8%;
+
+    .banner__predicure__text {
+      display: flex;
+      align-items: center; // Menyusun elemen ke tengah secara vertikal
+      gap: 20px;
+
+      a, h4 {
+        font-family: $font__family;
+        font-size: 20px;
+        padding-top: 5%;
+        text-decoration: none;
+        color: #333; // Warna teks default
+        transition: color 0.3s ease; // Animasi perubahan warna
+
+        &:hover {
+          color: rgb(255, 121, 204); // Warna teks saat dihover
+        }
+      }
+    }
+
+    h2 {
+      font-size: 75px;
+      @include font__primary;
+      padding-top: 2%;
+      color: rgb(255, 251, 254);
+    }
+  }
+}
+
+
+

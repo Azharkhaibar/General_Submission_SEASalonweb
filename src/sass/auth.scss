@@ -1,0 +1,67 @@
+#auth {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  background: #f7f7f7; // Warna latar belakang yang lembut
+
+  .auth-form {
+    max-width: 400px;
+    width: 100%;
+    padding: 2rem;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    h2 {
+      margin-bottom: 1.5rem;
+      color: #333;
+      font-size: 2rem;
+      font-weight: bold;
+    }
+
+    label {
+      width: 100%;
+      margin-bottom: 0.5rem;
+      color: #555;
+      font-size: 1rem;
+      text-align: left;
+    }
+
+    input {
+      width: 100%;
+      padding: 0.8rem;
+      margin-bottom: 1.5rem;
+      border: 1px solid #ddd;
+      border-radius: 5px;
+      font-size: 1rem;
+      outline: none;
+      transition: border-color 0.3s;
+
+      &:focus {
+        border-color: #ff79cc;
+      }
+    }
+
+    button {
+      width: 100%;
+      padding: 0.8rem;
+      background: #ff79cc;
+      color: #fff;
+      border: none;
+      border-radius: 5px;
+      font-size: 1rem;
+      font-weight: bold;
+      cursor: pointer;
+      transition: background 0.3s;
+
+      &:hover {
+        background: #ff66bb;
+      }
+    }
+  }
+}

@@ -1,0 +1,45 @@
+services :
+- haircuts and styling
+- manicure and pedicure
+- facial treatments
+
+db ->
+
+-reservations
+-users
+-services 
+
+db -> status 200 pure /image/star (1).png
+
+<div id="testimonials">
+      <h2>Customer Testimonials</h2>
+
+      <div className="testimonial-slider">
+        <div className="testimonial__cards">
+          {testimonials.map((testimonial, index) => (
+            <div key={index} className={`testimonial__card ${index === currentSlide ? "active" : ""}`}>
+              <img src={testimonial.photo} alt={testimonial.name} className="testimonial__photo" />
+              <h3>{testimonial.name}</h3>
+              <div className="rating">
+                {[...Array(testimonial.rating)].map((_, i) => (
+                  <img key={i} src="/image/star (1).png" alt="star" className="star-icon" />
+                ))}
+              </div>
+              <p className="profession">{testimonial.profession}</p>
+              <p className="location">{testimonial.location}</p>
+              <p className="description">{testimonial.description}</p>
+            </div>
+          ))}
+        </div>
+
+        {/* Navigation controls */}
+        <button className="prev-slide" onClick={prevSlide} disabled={currentSlide === 0}>
+          Previous
+        </button>
+        <button className="next-slide" onClick={nextSlide} disabled={currentSlide === testimonials.length - 1}>
+          Next
+        </button>
+      </div>
+    </div>
+
+    public/image/star (1).png
